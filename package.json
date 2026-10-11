@@ -1,0 +1,24 @@
+{
+  "name": "cadros2",
+  "version": "1.0.0",
+  "description": "Cadros2 - lectura musical local de imaxes",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "socket.io",
+    "score",
+    "image-analysis",
+    "performance"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "sharp": "^0.34.3",
+    "socket.io": "^4.8.3"
+  }
+}

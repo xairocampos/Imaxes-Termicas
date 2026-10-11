@@ -1,0 +1,228 @@
+{
+  "id": "termica_01_123456",
+  "imageFile": "3c1ca6a4-333d-48b7-8bc3-2d4e10ec7566.JPG",
+  "imageUrl": "/images/3c1ca6a4-333d-48b7-8bc3-2d4e10ec7566.JPG",
+  "timestamp": "2026-06-18T09:40:03.616Z",
+  "seed": 123456,
+  "duration": 30,
+  "pitchField": [
+    "A",
+    "C",
+    "E",
+    "G",
+    "D",
+    "F#"
+  ],
+  "features": {
+    "width": 360,
+    "height": 270,
+    "meanLum": 0.2749,
+    "contrast": 0.5412,
+    "luminancePercentiles": {
+      "p5": 0.0788,
+      "p15": 0.1003,
+      "p30": 0.1373,
+      "p50": 0.1917,
+      "p70": 0.359,
+      "p85": 0.5019,
+      "p95": 0.6238
+    },
+    "dominantColors": [
+      {
+        "hex": "#4e0297",
+        "ratio": 0.1223
+      },
+      {
+        "hex": "#8e06a7",
+        "ratio": 0.115
+      },
+      {
+        "hex": "#7103a6",
+        "ratio": 0.087
+      },
+      {
+        "hex": "#380389",
+        "ratio": 0.0689
+      },
+      {
+        "hex": "#d42e70",
+        "ratio": 0.0566
+      },
+      {
+        "hex": "#ea4d4c",
+        "ratio": 0.0468
+      },
+      {
+        "hex": "#f86b2c",
+        "ratio": 0.0368
+      }
+    ],
+    "colorHistogram": [
+      {
+        "hex": "#4e0297",
+        "ratio": 0.1223
+      },
+      {
+        "hex": "#8e06a7",
+        "ratio": 0.115
+      },
+      {
+        "hex": "#7103a6",
+        "ratio": 0.087
+      },
+      {
+        "hex": "#380389",
+        "ratio": 0.0689
+      },
+      {
+        "hex": "#d42e70",
+        "ratio": 0.0566
+      },
+      {
+        "hex": "#ea4d4c",
+        "ratio": 0.0468
+      },
+      {
+        "hex": "#f86b2c",
+        "ratio": 0.0368
+      }
+    ],
+    "warmRatio": 0.185,
+    "coolRatio": 0.3474,
+    "greenRatio": 0.0007,
+    "darkRatio": 0.498,
+    "brightRatio": 0.0247,
+    "saturation": 0.8911,
+    "edgeDensity": 0.0534,
+    "orientationTendency": {
+      "horizontal": 0.3528,
+      "vertical": 0.5833,
+      "diagonal": 0.064
+    },
+    "centroidWarm": {
+      "x": 0.2877,
+      "y": 0.57,
+      "weight": 17985.761
+    },
+    "centroidCool": {
+      "x": 0.5966,
+      "y": 0.3995,
+      "weight": 33769.8762
+    },
+    "centroidBright": {
+      "x": 0.0642,
+      "y": 0.7488,
+      "weight": 2401.9027
+    },
+    "centroidDark": {
+      "x": 0.6327,
+      "y": 0.4705,
+      "weight": 48404.9947
+    },
+    "quadrantDensity": {
+      "topLeft": 0.2202,
+      "topRight": 0.2893,
+      "bottomLeft": 0.2306,
+      "bottomRight": 0.26
+    },
+    "entropy": 4.1664,
+    "complexity": 0.5315,
+    "thermalProfile": {
+      "warmDominance": 0.3475,
+      "coolDominance": 0.6525,
+      "heatCenterY": 0.57,
+      "coldCenterY": 0.3995
+    },
+    "durationSeconds": 30,
+    "pitchField": [
+      "A",
+      "C",
+      "E",
+      "G",
+      "D",
+      "F#"
+    ]
+  },
+  "visualSummary": "frio dominante",
+  "globalInstruction": "Modulo libre de 30 segundos. Non e necesario sincronizar entradas.",
+  "parts": {
+    "piano": {
+      "title": "Piano",
+      "duration": "30 s",
+      "mode": "constellations",
+      "modeLabel": "constelacions",
+      "notes": [
+        [
+          "A3",
+          "C4",
+          "E2"
+        ],
+        [
+          "G3",
+          "D3",
+          "F#4"
+        ],
+        [
+          "C4",
+          "E2",
+          "G3"
+        ],
+        [
+          "D3",
+          "F#4",
+          "A2"
+        ]
+      ],
+      "cells": [
+        [
+          "F#5",
+          "A3",
+          "C4",
+          "E4"
+        ]
+      ],
+      "dynamics": "pp",
+      "register": "grave/medio",
+      "technique": "pedal curto ou medio",
+      "instruction": "Acordes lentos ou constelacions. Repetir libremente, sen pulso obrigatorio."
+    },
+    "flute": {
+      "title": "Frauta",
+      "duration": "30 s",
+      "mode": "long_tones",
+      "modeLabel": "notas longas",
+      "notes": [
+        "A5",
+        "C6"
+      ],
+      "cells": [],
+      "dynamics": "pp/p",
+      "register": "medio/agudo",
+      "technique": "sen vibrato, aire opcional",
+      "instruction": "Unha ou varias notas longas. Entrar libremente e deixar moito silencio."
+    },
+    "viola": {
+      "title": "Viola",
+      "duration": "30 s",
+      "mode": "pedals",
+      "modeLabel": "pedais",
+      "notes": [
+        "G3",
+        "A4",
+        "F#3",
+        "D3"
+      ],
+      "cells": [],
+      "doubleStops": [
+        [
+          "G3",
+          "A4"
+        ]
+      ],
+      "dynamics": "pp",
+      "register": "grave/medio",
+      "technique": "sul ponticello moi lixeiro",
+      "instruction": "Pedais longos. Cambiar de nota lentamente, como unha zona fria que se despraza."
+    }
+  }
+}

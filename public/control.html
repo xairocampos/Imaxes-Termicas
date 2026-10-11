@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="gl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadros2 - Control</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/score.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Cadros2</p>
+        <h1>Cadros2</h1>
+        <p class="subtitle">Lectura musical de imaxes</p>
+      </div>
+      <nav class="nav">
+        <a href="/performer/piano" target="_blank" rel="noopener">Piano</a>
+        <a href="/performer/flute" target="_blank" rel="noopener">Frauta</a>
+        <a href="/performer/viola" target="_blank" rel="noopener">Viola</a>
+        <a href="/performer/all" target="_blank" rel="noopener">Todas</a>
+        <a href="/stage" target="_blank" rel="noopener">Stage</a>
+        <a href="/admin" target="_blank" rel="noopener">Admin</a>
+      </nav>
+    </header>
+
+    <section class="layout">
+      <aside class="panel">
+        <div class="panel-header">
+          <h2>Termica</h2>
+          <span id="imageCount" class="status-line"></span>
+        </div>
+        <div class="panel-body">
+          <div id="warning" class="warning"></div>
+          <div id="gallery" class="gallery"></div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2 id="selectedTitle">Sen imaxe seleccionada</h2>
+          <span id="statusLine" class="status-line"></span>
+        </div>
+        <div class="panel-body">
+          <div class="selected-image">
+            <img id="selectedImage" alt="">
+            <div>
+              <div class="actions">
+                <button id="analyzeBtn" class="primary">Analizar foto</button>
+                <button id="generateBtn" class="warm">Xerar partitura</button>
+                <button id="newSeedBtn">Nova xeración</button>
+                <button id="sendBtn">Enviar ás tablets</button>
+                <button id="saveAnalysisBtn">Gardar análise</button>
+              </div>
+              <div class="actions">
+                <button data-print="piano">Descargar PDF piano</button>
+                <button data-print="flute">Descargar PDF frauta</button>
+                <button data-print="viola">Descargar PDF viola</button>
+                <button data-print="all">Descargar PDF todas as partes</button>
+              </div>
+              <div id="features" class="feature-grid"></div>
+              <div id="swatches" class="swatches"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="panel" style="margin-top:16px">
+      <div class="panel-header">
+        <h2>Partitura</h2>
+        <span id="scoreStatus" class="status-line"></span>
+      </div>
+      <div class="panel-body">
+        <div id="scoreRoot" class="score-root empty"><p>Agardando xeración.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/imageAnalysisClient.js"></script>
+  <script src="/js/pdfExport.js"></script>
+  <script src="/js/scoreRenderer.js"></script>
+  <script src="/js/control.js"></script>
+</body>
+</html>

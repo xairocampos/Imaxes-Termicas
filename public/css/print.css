@@ -1,0 +1,30 @@
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+.topbar,
+.nav,
+.actions,
+.performer-tools,
+button {
+  display: none !important;
+}
+
+.app-shell {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.part,
+.panel {
+  break-inside: avoid;
+  border-color: #111;
+  background: #fff;
+}

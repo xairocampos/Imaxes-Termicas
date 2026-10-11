@@ -1,0 +1,16 @@
+
+CADROS2 activo
+Control : http://localhost:3001/control
+Piano   : http://localhost:3001/performer/piano
+Frauta  : http://localhost:3001/performer/flute
+Viola   : http://localhost:3001/performer/viola
+Todas   : http://localhost:3001/performer/all
+Stage   : http://localhost:3001/stage
+Admin   : http://localhost:3001/admin
+
+[+] Pnl9IQbxrtwhQIVWAAAB conectado
+[-] Pnl9IQbxrtwhQIVWAAAB desconectado: transport close
+[+] 2mn4gyG0Rhb5WOSTAAAD conectado
+[-] 2mn4gyG0Rhb5WOSTAAAD desconectado: transport close
+
+[SIGTERM] Pechando Cadros2...

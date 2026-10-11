@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="gl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadros2 - Piano</title>
+  <style>
+    @page { size: A4; margin: 15mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #111; background: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .toolbar { position: sticky; top: 0; display: flex; gap: 8px; padding: 10px; background: #111; z-index: 2; }
+    .toolbar button { border: 1px solid #555; background: #fff; color: #111; padding: 8px 12px; cursor: pointer; }
+    main { max-width: 980px; margin: 0 auto; padding: 22px 0 40px; }
+    header { display: flex; justify-content: space-between; gap: 20px; border-bottom: 2px solid #111; padding-bottom: 12px; margin-bottom: 18px; }
+    .eyebrow { margin: 0 0 4px; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #555; }
+    h1 { margin: 0; font-size: 32px; font-weight: 500; }
+    h2 { margin: 0; font-size: 24px; }
+    .meta { text-align: right; font-size: 12px; line-height: 1.5; }
+    .image-name { font-weight: 600; word-break: break-word; }
+    .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0 18px; }
+    .summary span { border: 1px solid #ccc; padding: 8px; min-height: 48px; }
+    .summary b { display: block; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: #666; margin-bottom: 3px; }
+    .part { break-inside: avoid; border: 2px solid #111; margin-bottom: 16px; }
+    .part-head { display: flex; justify-content: space-between; align-items: end; gap: 12px; border-bottom: 1px solid #111; padding: 12px; }
+    .part-head span { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #555; }
+    .label { padding: 12px 12px 0; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #666; }
+    .notes { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 12px 14px; }
+    .note { border: 1px solid #111; padding: 8px 12px; font-size: 28px; font-weight: 500; line-height: 1; }
+    .chord-list { display: grid; gap: 8px; padding: 10px 12px 14px; }
+    .chord { display: grid; grid-template-columns: 90px 1fr; gap: 10px; align-items: center; border: 1px solid #111; padding: 8px; }
+    .chord em { font-style: normal; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #555; }
+    .chord strong { display: inline-block; margin: 3px 5px 3px 0; border: 1px solid #999; padding: 7px 10px; font-size: 26px; line-height: 1; }
+    .cells { padding: 0 12px 12px; font-size: 13px; }
+    .info { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 12px 12px; }
+    .info span { border: 1px solid #ccc; padding: 5px 8px; font-size: 11px; text-transform: uppercase; }
+    .instruction { border-top: 1px solid #111; margin: 0; padding: 12px; font-size: 15px; line-height: 1.4; }
+    @media print { .toolbar { display: none; } main { padding-top: 0; } .part { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">Imprimir / Gardar como PDF</button>
+    <button onclick="window.close()">Pechar</button>
+  </div>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Cadros2</p>
+        <h1>Piano</h1>
+        <p class="image-name">3c1ca6a4-333d-48b7-8bc3-2d4e10ec7566.JPG</p>
+      </div>
+      <div class="meta">
+        <div>2026-06-18T09:40:03.616Z</div>
+        <div>Seed 123456</div>
+        <div>Modulo libre de 30 segundos. Non e necesario sincronizar entradas.</div>
+      </div>
+    </header>
+    <div class="summary"><span><b>luminancia</b>0.2749</span><span><b>contraste</b>0.5412</span><span><b>calor</b>0.185</span><span><b>frio</b>0.3474</span><span><b>bordes</b>0.0534</span><span><b>complexidade</b>0.5315</span><span><b>pitch field</b>A C E G D F#</span><span><b>resumo</b>frio dominante</span></div>
+    
+    <section class="part">
+      <div class="part-head">
+        <h2>Piano</h2>
+        <span>constelacions</span>
+      </div>
+      <div class="label">Acordes</div>
+      <div class="chord-list"><div class="chord"><em>Acorde 1</em><span><strong>A3</strong><strong>C4</strong><strong>E2</strong></span></div><div class="chord"><em>Acorde 2</em><span><strong>G3</strong><strong>D3</strong><strong>F#4</strong></span></div><div class="chord"><em>Acorde 3</em><span><strong>C4</strong><strong>E2</strong><strong>G3</strong></span></div><div class="chord"><em>Acorde 4</em><span><strong>D3</strong><strong>F#4</strong><strong>A2</strong></span></div></div>
+      <div class="cells"><strong>Celulas:</strong> F#5 - A3 - C4 - E4</div>
+      <div class="info">
+        <span>30 s</span>
+        <span>pp</span>
+        <span>grave/medio</span>
+        <span>pedal curto ou medio</span>
+      </div>
+      <p class="instruction">Acordes lentos ou constelacions. Repetir libremente, sen pulso obrigatorio.</p>
+    </section>
+  
+  </main>
+  
+</body>
+</html>

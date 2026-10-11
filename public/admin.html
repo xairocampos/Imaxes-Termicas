@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="gl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadros2 - Admin</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/score.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Cadros2</p>
+        <h1>Admin</h1>
+        <p id="adminStatus" class="subtitle">estado técnico</p>
+      </div>
+      <nav class="nav">
+        <a href="/control">Control</a>
+        <a href="/stage">Stage</a>
+        <a href="/performer/all">Todas</a>
+      </nav>
+    </header>
+
+    <section class="layout">
+      <section class="panel">
+        <div class="panel-header"><h2>Estado</h2></div>
+        <div class="panel-body">
+          <div id="stateGrid" class="feature-grid"></div>
+          <div class="actions">
+            <button id="refreshArchive">Actualizar arquivo</button>
+            <button data-print="all">Imprimir todas</button>
+          </div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-header"><h2>Arquivo</h2></div>
+        <div class="panel-body">
+          <div id="archiveList" class="archive-list"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="panel" style="margin-top:16px">
+      <div class="panel-header"><h2>Última partitura</h2></div>
+      <div class="panel-body">
+        <div id="scoreRoot" class="score-root empty"><p>Sen partitura.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/imageAnalysisClient.js"></script>
+  <script src="/js/pdfExport.js"></script>
+  <script src="/js/scoreRenderer.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

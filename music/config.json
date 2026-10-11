@@ -1,0 +1,14 @@
+{
+  "port": 3001,
+  "cycleSeconds": 30,
+  "pitchFieldBase": ["D", "E", "F#", "G", "A", "C"],
+  "thresholds": {
+    "highContrast": 0.55,
+    "manyEdges": 0.16,
+    "warm": 0.32,
+    "cool": 0.32,
+    "dark": 0.28,
+    "bright": 0.32,
+    "complex": 0.58
+  }
+}

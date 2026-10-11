@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="gl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cadros2 - Performer</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/score.css">
+  <link rel="stylesheet" href="/css/print.css" media="print">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Cadros2</p>
+        <h1 id="partTitle">Partitura</h1>
+        <p id="connectionState" class="subtitle">sen partitura</p>
+      </div>
+      <nav class="nav">
+        <a href="/control">Control</a>
+        <a href="/performer/piano">Piano</a>
+        <a href="/performer/flute">Frauta</a>
+        <a href="/performer/viola">Viola</a>
+        <a href="/performer/all">Todas</a>
+      </nav>
+    </header>
+
+    <div class="performer-tools">
+      <button id="fullscreenBtn">Pantalla completa</button>
+      <button id="printBtn">Imprimir / Gardar PDF</button>
+    </div>
+
+    <section id="scoreRoot" class="score-root empty"><p>Agardando partitura.</p></section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/pdfExport.js"></script>
+  <script src="/js/scoreRenderer.js"></script>
+  <script src="/js/performer.js"></script>
+</body>
+</html>
