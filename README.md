@@ -1,6 +1,6 @@
-# Cadros2
+# Imaxes Térmicas
 
-Cadros2 e unha aplicacion local para transformar imaxes da carpeta `termica/` nunha partitura aberta para piano, frauta e viola.
+Imaxes Térmicas e unha aplicacion local para transformar imaxes da carpeta `termica/` nunha partitura aberta para piano, frauta e viola.
 
 ## Instalar
 
